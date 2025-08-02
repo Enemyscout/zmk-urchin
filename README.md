@@ -121,7 +121,7 @@ This layout is inspired by [Duckyb's](https://github.com/duckyb/zmk-urchin)
 
 <div align="center">
   
-  ![sweep-layout](assets/images/My_Uchin.drawio.svg)
+  ![sweep-layout](assets/images/My_Uchin.drawio2.svg)
 
 </div>
 
