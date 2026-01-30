@@ -19,7 +19,7 @@
 
 #define DEFAULT 0
 #define SYM     1
-#define MOVE    2
+#define MOVEFKT 2
 #define UMLAUT  3
 #define SYS     4
 #define POINTER 5
@@ -34,28 +34,28 @@
         combo_esc {
             timeout-ms = <50>;
             key-positions = <1 2>;
-            layers = <DEFAULT SYM MOVE UMLAUT>;
+            layers = <DEFAULT SYM MOVEFKT UMLAUT>;
             bindings = <&kp ESC>;
             slow-release;
         };
         combo_bksp {
             timeout-ms = <75>;
             key-positions = <7 8>;
-            layers = <DEFAULT SYM MOVE UMLAUT>;
+            layers = <DEFAULT SYM MOVEFKT UMLAUT>;
             bindings = <&kp BSPC>;
             slow-release;
         };
         combo_tab {
             timeout-ms = <50>;
             key-positions = <21 22>;
-            layers = <DEFAULT SYM MOVE UMLAUT>;
+            layers = <DEFAULT SYM MOVEFKT UMLAUT>;
             bindings = <&kp TAB>;
             slow-release;
         };
         combo_enter {
             timeout-ms = <50>;
             key-positions = <27 28>;
-            layers = <DEFAULT SYM MOVE UMLAUT>;
+            layers = <DEFAULT SYM MOVEFKT  UMLAUT>;
             bindings = <&kp ENTER>;
             slow-release;
         };
@@ -86,49 +86,49 @@
         combo_lctl {
             timeout-ms = <50>;
             key-positions = <12 13>;
-            layers = <DEFAULT IPAD SYM MOVE UMLAUT IPADSYM>;
+            layers = <DEFAULT SYM MOVEFKT  UMLAUT>;
             bindings = <&kp LCTL>;
             slow-release;
         };
         combo_lalt {
             timeout-ms = <50>;
             key-positions = <11 13>;
-            layers = <DEFAULT IPAD SYM MOVE UMLAUT IPADSYM>;
+            layers = <DEFAULT SYM MOVEFKT UMLAUT>;
             bindings = <&kp LALT>;
             slow-release;
         };
         combo_lgui {
             timeout-ms = <50>;
             key-positions = <10 13>;
-            layers = <DEFAULT IPAD SYM MOVE UMLAUT IPADSYM>;
+            layers = <DEFAULT SYM MOVEFKT UMLAUT>;
             bindings = <&kp LGUI>;
             slow-release;
         };
         combo_rctl {
             timeout-ms = <50>;
             key-positions = <16 17>;
-            layers = <DEFAULT IPAD SYM MOVE UMLAUT IPADSYM>;
+            layers = <DEFAULT SYM MOVEFKT UMLAUT>;
             bindings = <&kp RCTL>;
             slow-release;
         };
         combo_ralt {
             timeout-ms = <50>;
             key-positions = <16 18>;
-            layers = <DEFAULT IPAD SYM MOVE UMLAUT IPADSYM>;
+            layers = <DEFAULT SYM MOVEFKT UMLAUT>;
             bindings = <&kp LALT>;
             slow-release;
         };
         combo_rapp {
             timeout-ms = <50>;
             key-positions = <16 19>;
-            layers = <DEFAULT IPAD SYM MOVE UMLAUT IPADSYM>;
+            layers = <DEFAULT SYM MOVEFKT UMLAUT>;
             bindings = <&kp K_APP>;
             slow-release;
         };
         combo_pointer {
             timeout-ms = <50>;
             key-positions = <17 33>;
-            layers = <DEFAULT IPAD SYM MOVE UMLAUT IPADSYM>;
+            layers = <DEFAULT SYM MOVEFKT UMLAUT>;
             bindings = <&mo POINTER>;
             slow-release;
         };
@@ -202,7 +202,7 @@
 &kp Q                &kp W            &kp E            &kp R                &kp T       &kp DE_Z          &kp U            &kp I             &kp O            &kp P              
 &kp A                &kp S            &hm LSHIFT D     &kp F                &kp G       &kp H             &kp J            &hm RSHIFT K      &kp L    &mo_slwm SYS UMLAUT
 &hm LSHIFT DE_Y      &kp X            &kp C            &kp V                &kp B       &kp N             &kp M            &kp DE_COMMA      &kp DE_DOT       &hm RSHIFT DE_MINUS
-                                                       MO_SLWM(SYM)         &kp ENTER   &kp SPACE         MO_SLWM(MOVE)   
+                                                       MO_SLWM(SYM)         &kp ENTER   &kp SPACE         MO_SLWM(MOVEFKT)   
             >;
         };
 
@@ -223,7 +223,7 @@
             >;
         };
 
-        move {
+        MOVEFKT  {
             // -------------------------------------------------------------------------------------------
             // | F6  | F7  | F8  | F9  | F10    |   | HOME | PG_DN  | PG_UP  | END     | BKSP |
             // | F1  | F2  | F3  | F4  | F5     |   | LEFT | DOWN   | UP     | RIGHT   | TAB  |
