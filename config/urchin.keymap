@@ -18,13 +18,11 @@
 #define MO_SLWM(layer) &mo_slwm layer layer     // Momentary and sticky layer
 
 #define DEFAULT 0
-#define IPAD    1
-#define SYM     2
-#define MOVE    3
-#define UMLAUT  4
-#define SYS     5
-#define IPADSYM 6
-#define POINTER 7
+#define SYM     1
+#define MOVE    2
+#define UMLAUT  3
+#define SYS     4
+#define POINTER 5
 
 /*
  * Combos for ESC, Backspace, TAB and ENTER
@@ -36,28 +34,28 @@
         combo_esc {
             timeout-ms = <50>;
             key-positions = <1 2>;
-            layers = <DEFAULT IPAD SYM MOVE UMLAUT IPADSYM>;
+            layers = <DEFAULT SYM MOVE UMLAUT>;
             bindings = <&kp ESC>;
             slow-release;
         };
         combo_bksp {
             timeout-ms = <75>;
             key-positions = <7 8>;
-            layers = <DEFAULT IPAD SYM MOVE UMLAUT IPADSYM>;
+            layers = <DEFAULT SYM MOVE UMLAUT>;
             bindings = <&kp BSPC>;
             slow-release;
         };
         combo_tab {
             timeout-ms = <50>;
             key-positions = <21 22>;
-            layers = <DEFAULT IPAD SYM MOVE UMLAUT IPADSYM>;
+            layers = <DEFAULT SYM MOVE UMLAUT>;
             bindings = <&kp TAB>;
             slow-release;
         };
         combo_enter {
             timeout-ms = <50>;
             key-positions = <27 28>;
-            layers = <DEFAULT IPAD SYM MOVE UMLAUT IPADSYM>;
+            layers = <DEFAULT SYM MOVE UMLAUT>;
             bindings = <&kp ENTER>;
             slow-release;
         };
@@ -84,12 +82,6 @@
             key-positions = <10 11 12 13>;
             // layers = <DEFAULT>;
             bindings = <&to DEFAULT>;
-        };
-        combo_ipad {
-            timeout-ms = <50>;
-            key-positions = <0 1 2 3>;
-            // layers = <DEFAULT>;
-            bindings = <&to IPAD>;
         };
         combo_lctl {
             timeout-ms = <50>;
@@ -205,7 +197,7 @@
             // |  A  |  S  |  D  |  F   |  G  |   |  H  |  J   |  K  |  L  | SL3 |
             // |  Z  |  X  |  C  |  V   |  B  |   |  N  |  M   |  ,  |  .  |  -  |
             //                   | LALT | SPC |   | SPC | RCTL |
-
+	    display-name = "BASE";
             bindings = <
 &kp Q                &kp W            &kp E            &kp R                &kp T       &kp DE_Z          &kp U            &kp I             &kp O            &kp P              
 &kp A                &kp S            &hm LSHIFT D     &kp F                &kp G       &kp H             &kp J            &hm RSHIFT K      &kp L    &mo_slwm SYS UMLAUT
@@ -214,20 +206,7 @@
             >;
         };
 
-        ipad {
-            // ---------------------------------------------------------------------------------
-            // |  Q  |  W  |  E  |  R   |  T  |   |  Y  |  U   |  I  |  O  |  P  |
-            // |  A  |  S  |  D  |  F   |  G  |   |  H  |  J   |  K  |  L  | SL3 |
-            // |  Z  |  X  |  C  |  V   |  B  |   |  N  |  M   |  ,  |  .  |  -  |
-            //                   | LALT | SPC |   | SPC | RCTL |
-
-            bindings = <
-&kp Q                &kp W            &kp E            &kp R                &kp T       &kp DE_Z          &kp U            &kp I             &kp O            &kp P              
-&kp A                &hm_rt LALT S    &hm LSHIFT D     &hm_rt LCTL F        &hm LGUI G  &hm K_APP H       &hm_rt RCTL J    &hm RSHIFT K      &hm_rt LALT L    &mo_slwm SYS UMLAUT
-&hm LSHIFT DE_Y      &kp X            &kp C            &kp V                &kp B       &kp N             &kp M            &kp DE_COMMA      &kp DE_DOT       &hm RSHIFT DE_MINUS
-                                                       MO_SLWM(IPADSYM)     &kp ENTER   &kp SPACE         MO_SLWM(MOVE)   
-            >;
-        };
+        
 
         symbol {
             // -----------------------------------------------------------------------------------------------------
@@ -235,6 +214,7 @@
             // | = "|"  |  {   |  (   |    )    |  }   |   | " '  |  4     |  5    |  6    | ! # |
             // | $ €    |  <   |  [   |    ]    |  >   |   | 0 &  |  1     |  2 ,  |  3 .  | ° ^ |
             //                 | tran | tog SYM | tran |   | tran | K_MENU |
+            display-name = "SYM";
             bindings = <
 &mt DE_SECT DE_AT   &mt DE_TILD DE_PLUS  &mt DE_UNDS DE_MINUS  &mt DE_PERC DE_ASTR  &mt DE_BSLS DE_SLSH      &mt LS(DE_ACUT) DE_ACUT  &kp DE_7    &kp DE_8           &kp DE_9          &kp DE_QUES        
 &mt DE_PIPE DE_EQL  &kp DE_LCBR          &kp DE_LPRN           &kp DE_RPRN          &kp DE_RCBR              &mt DE_QUOT DE_DQUO      &kp DE_4    &kp DE_5           &kp DE_6          &mt DE_HASH DE_EXLM
@@ -249,7 +229,7 @@
             // | F1  | F2  | F3  | F4  | F5     |   | LEFT | DOWN   | UP     | RIGHT   | TAB  |
             // | F11 | F12 | NA  | NA  | SHIFT  |   | NA   | COPY   | CUT    | PASTE   | DEL  |
             //                   | NA  | NA     |   | NA   |  NA    |
-
+	    display-name = "M&F";
             bindings = <
 &kp F6    &kp F7  &kp F8    &kp F9        &kp F10         &kp HOME  &kp PG_DN    &kp PG_UP   &kp END       &kp BKSP  
 &kp F1    &kp F2  &kp F3    &kp F4        &kp F5          &kp LEFT  &kp DOWN     &kp UP      &kp RIGHT     &kp TAB  
@@ -264,7 +244,7 @@
             // | Ä    | ß    | tran | tran | tran |   | tran | tran | tran | tran | tran |
             // | tran | tran | tran | tran | tran |   | tran | µ    | tran | tran | -    |
             //                      | tran | tran |   | tran | tran |
-
+            display-name = "UML";
             bindings = <
 &trans       &kp DE_SUP2  &kp DE_SUP3  &trans    &trans              &trans         &kp DE_UDIA  &trans  &kp DE_ODIA  &trans             
 &kp DE_ADIA  &kp DE_SS    &trans       &trans    &trans              &trans         &trans       &trans  &trans       &trans             
@@ -279,26 +259,12 @@
             // | K_PWR    | NA       | NA       | NA       | NA       |   | NA | NA | NA | NA | NA     |
             // | BT_SEL 0 | BT_SEL 1 | BT_SEL 2 | BT_SEL 3 | BT_SEL 4 |   | NA | NA | NA | NA | K_LOCK |
             //                                  | NA       | NA       |   | NA | NA | 
-
+            display-name = "SYS";
             bindings = <
 &kp K_SLEEP   &none         &none         &none         &none             &none  &none  &none  &none  &kp DE_3FS
 &kp K_PWR     &none         &none         &none         &none             &none  &none  &none  &none  &none 
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4      &none  &none  &none  &none  &kp LG(L)
                                           &none         &none             &none  &none  
-            >;
-        };
-
-        ipad_symbol {
-            // -----------------------------------------------------------------------------------------------------
-            // | @ §    | + ~  | - _  |   * %   | / \  |   | ` ´  |  7     |  8    |  9    |   ? |
-            // | = "|"  |  {   |  (   |    )    |  }   |   | " '  |  4     |  5    |  6    | ! # |
-            // | $ €    |  <   |  [   |    ]    |  >   |   | 0 &  |  1     |  2 ,  |  3 .  | ° ^ |
-            //                 | tran | tog SYM | tran |   | tran | K_MENU |
-            bindings = <
-&mt DE_SECT DE_AT   &mt DE_TILD DE_PLUS  &mt DE_UNDS DE_MINUS  &mt DE_PERC DE_ASTR  &mt DE_BSLS DE_SLSH      &mt LS(DE_ACUT) DE_ACUT  &kp DE_7    &kp DE_8           &kp DE_9          &kp DE_QUES        
-&mt DE_APIPE DE_EQL &kp DE_LCBR          &kp DE_LPRN           &kp DE_RPRN          &kp DE_RCBR              &mt DE_QUOT DE_DQUO      &kp DE_4    &kp DE_5           &kp DE_6          &mt DE_HASH DE_EXLM
-&mt DE_EURO DE_DLR  &kp DE_CIRC          &kp DE_LBRC           &kp DE_RBRC          &kp DE_DEG               &mt DE_AMPR DE_0         &kp DE_1    &mt DE_COMMA DE_2  &mt DE_DOT DE_3   &mt DE_LABK DE_RABK
-                                                               &trans               &trans                   &kp BKSP                 &kp K_APP       
             >;
         };
         
@@ -308,7 +274,7 @@
             // | NA       | NA       | NA       | NA       | NA       |   | NA | NA | NA | NA | NA |
             // | BT_SEL 0 | BT_SEL 1 | BT_SEL 2 | BT_SEL 3 | BT_SEL 4 |   | NA | NA | NA | NA | -  |
             //                                  | NA       | NA       |   | NA | NA |
-
+	    display-name = "PTR";
             bindings = <
 &none          &none            &mmv MOVE_UP      &none             &none       &none  &none  &none  &none  &none 
 &msc SCRL_UP   &mmv MOVE_LEFT   &mmv MOVE_DOWN    &mmv MOVE_RIGHT   &none       &none  &none  &none  &none  &none
