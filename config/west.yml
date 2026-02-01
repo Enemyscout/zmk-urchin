@@ -14,8 +14,8 @@ manifest:
 #    - name: ulounge
 #      url-base: https://github.com/ulounge
 #      # To Here
-    - name: gpeye                                 #new entry
-        url-base: https://github.com/Enemyscout   #new entry
+    - name: gpeye
+      url-base: https://github.com/Enemyscout
     
   projects:
     - name: zmk
@@ -30,8 +30,8 @@ manifest:
 #      remote: ulounge                       
 #      revision: main
 #      # To Here                      
-    - name: urchin-peripheral-animation     #new entry
-        remote: gpeye                       #new entry
-        revision: main                      #new entry
+    - name: urchin-peripheral-animation
+      remote: gpeye
+      revision: main
   self:
     path: config
