@@ -72,9 +72,95 @@ Base Layer	README.md	/^  ### Base Layer$/;"	S	section:Keymap Layers & In depth L
 CONFIG_BT_CTLR_TX_PWR_PLUS_8	config/urchin.conf	/^CONFIG_BT_CTLR_TX_PWR_PLUS_8=y$/;"	k
 CONFIG_ZMK_IDLE_SLEEP_TIMEOUT	config/urchin.conf	/^CONFIG_ZMK_IDLE_SLEEP_TIMEOUT=1800000$/;"	k
 CONFIG_ZMK_PM_SOFT_OFF	config/urchin.conf	/^CONFIG_ZMK_PM_SOFT_OFF=y$/;"	k
+CONFIG_ZMK_POINTING	config/urchin.conf	/^CONFIG_ZMK_POINTING=y$/;"	k
 CONFIG_ZMK_SLEEP	config/urchin.conf	/^CONFIG_ZMK_SLEEP=y$/;"	k
 CONFIG_ZMK_WIDGET_BATTERY_STATUS_SHOW_PERCENTAGE	config/urchin.conf	/^CONFIG_ZMK_WIDGET_BATTERY_STATUS_SHOW_PERCENTAGE=y$/;"	k
 CONFIG_ZMK_WIDGET_WPM_STATUS	config/urchin.conf	/^CONFIG_ZMK_WIDGET_WPM_STATUS=n$/;"	k
+DE_0	config/keys_de.h	/^#define DE_0 /;"	d
+DE_1	config/keys_de.h	/^#define DE_1 /;"	d
+DE_2	config/keys_de.h	/^#define DE_2 /;"	d
+DE_3	config/keys_de.h	/^#define DE_3 /;"	d
+DE_3FS	config/keys_de.h	/^#define DE_3FS /;"	d
+DE_4	config/keys_de.h	/^#define DE_4 /;"	d
+DE_5	config/keys_de.h	/^#define DE_5 /;"	d
+DE_6	config/keys_de.h	/^#define DE_6 /;"	d
+DE_7	config/keys_de.h	/^#define DE_7 /;"	d
+DE_8	config/keys_de.h	/^#define DE_8 /;"	d
+DE_9	config/keys_de.h	/^#define DE_9 /;"	d
+DE_A	config/keys_de.h	/^#define DE_A /;"	d
+DE_AAT	config/keys_de.h	/^#define DE_AAT /;"	d
+DE_ACUT	config/keys_de.h	/^#define DE_ACUT /;"	d
+DE_ADIA	config/keys_de.h	/^#define DE_ADIA /;"	d
+DE_AMPR	config/keys_de.h	/^#define DE_AMPR /;"	d
+DE_APIPE	config/keys_de.h	/^#define DE_APIPE /;"	d
+DE_ASTR	config/keys_de.h	/^#define DE_ASTR /;"	d
+DE_AT	config/keys_de.h	/^#define DE_AT /;"	d
+DE_B	config/keys_de.h	/^#define DE_B /;"	d
+DE_BSLS	config/keys_de.h	/^#define DE_BSLS /;"	d
+DE_C	config/keys_de.h	/^#define DE_C /;"	d
+DE_CIRC	config/keys_de.h	/^#define DE_CIRC /;"	d
+DE_COLN	config/keys_de.h	/^#define DE_COLN /;"	d
+DE_COMMA	config/keys_de.h	/^#define DE_COMMA /;"	d
+DE_COPY	config/keys_de.h	/^#define DE_COPY /;"	d
+DE_CUT	config/keys_de.h	/^#define DE_CUT /;"	d
+DE_D	config/keys_de.h	/^#define DE_D /;"	d
+DE_DEG	config/keys_de.h	/^#define DE_DEG /;"	d
+DE_DLR	config/keys_de.h	/^#define DE_DLR /;"	d
+DE_DOT	config/keys_de.h	/^#define DE_DOT /;"	d
+DE_DQUO	config/keys_de.h	/^#define DE_DQUO /;"	d
+DE_E	config/keys_de.h	/^#define DE_E /;"	d
+DE_EQL	config/keys_de.h	/^#define DE_EQL /;"	d
+DE_EURO	config/keys_de.h	/^#define DE_EURO /;"	d
+DE_EXLM	config/keys_de.h	/^#define DE_EXLM /;"	d
+DE_F	config/keys_de.h	/^#define DE_F /;"	d
+DE_G	config/keys_de.h	/^#define DE_G /;"	d
+DE_GRV	config/keys_de.h	/^#define DE_GRV /;"	d
+DE_H	config/keys_de.h	/^#define DE_H /;"	d
+DE_HASH	config/keys_de.h	/^#define DE_HASH /;"	d
+DE_I	config/keys_de.h	/^#define DE_I /;"	d
+DE_J	config/keys_de.h	/^#define DE_J /;"	d
+DE_K	config/keys_de.h	/^#define DE_K /;"	d
+DE_L	config/keys_de.h	/^#define DE_L /;"	d
+DE_LABK	config/keys_de.h	/^#define DE_LABK /;"	d
+DE_LBRC	config/keys_de.h	/^#define DE_LBRC /;"	d
+DE_LCBR	config/keys_de.h	/^#define DE_LCBR /;"	d
+DE_LPRN	config/keys_de.h	/^#define DE_LPRN /;"	d
+DE_M	config/keys_de.h	/^#define DE_M /;"	d
+DE_MICR	config/keys_de.h	/^#define DE_MICR /;"	d
+DE_MINUS	config/keys_de.h	/^#define DE_MINUS /;"	d
+DE_N	config/keys_de.h	/^#define DE_N /;"	d
+DE_O	config/keys_de.h	/^#define DE_O /;"	d
+DE_ODIA	config/keys_de.h	/^#define DE_ODIA /;"	d
+DE_P	config/keys_de.h	/^#define DE_P /;"	d
+DE_PASTE	config/keys_de.h	/^#define DE_PASTE /;"	d
+DE_PERC	config/keys_de.h	/^#define DE_PERC /;"	d
+DE_PIPE	config/keys_de.h	/^#define DE_PIPE /;"	d
+DE_PLUS	config/keys_de.h	/^#define DE_PLUS /;"	d
+DE_Q	config/keys_de.h	/^#define DE_Q /;"	d
+DE_QUES	config/keys_de.h	/^#define DE_QUES /;"	d
+DE_QUOT	config/keys_de.h	/^#define DE_QUOT /;"	d
+DE_R	config/keys_de.h	/^#define DE_R /;"	d
+DE_RABK	config/keys_de.h	/^#define DE_RABK /;"	d
+DE_RBRC	config/keys_de.h	/^#define DE_RBRC /;"	d
+DE_RCBR	config/keys_de.h	/^#define DE_RCBR /;"	d
+DE_RPRN	config/keys_de.h	/^#define DE_RPRN /;"	d
+DE_S	config/keys_de.h	/^#define DE_S /;"	d
+DE_SCLN	config/keys_de.h	/^#define DE_SCLN /;"	d
+DE_SECT	config/keys_de.h	/^#define DE_SECT /;"	d
+DE_SLSH	config/keys_de.h	/^#define DE_SLSH /;"	d
+DE_SS	config/keys_de.h	/^#define DE_SS /;"	d
+DE_SUP2	config/keys_de.h	/^#define DE_SUP2 /;"	d
+DE_SUP3	config/keys_de.h	/^#define DE_SUP3 /;"	d
+DE_T	config/keys_de.h	/^#define DE_T /;"	d
+DE_TILD	config/keys_de.h	/^#define DE_TILD /;"	d
+DE_U	config/keys_de.h	/^#define DE_U /;"	d
+DE_UDIA	config/keys_de.h	/^#define DE_UDIA /;"	d
+DE_UNDS	config/keys_de.h	/^#define DE_UNDS /;"	d
+DE_V	config/keys_de.h	/^#define DE_V /;"	d
+DE_W	config/keys_de.h	/^#define DE_W /;"	d
+DE_X	config/keys_de.h	/^#define DE_X /;"	d
+DE_Y	config/keys_de.h	/^#define DE_Y /;"	d
+DE_Z	config/keys_de.h	/^#define DE_Z /;"	d
 End result	README.md	/^### End result$/;"	S	section:The journey that leads to an Urchin keyboard
 Ext Layer	README.md	/^  ### Ext Layer$/;"	S	section:Keymap Layers & In depth Logic
 FR_0	config/keymap_french.h	/^#define FR_0 /;"	d
@@ -169,6 +255,10 @@ Known issues & Room for Improvements	README.md	/^## Known issues & Room for Impr
 Layout - French & English efficiency -	README.md	/^### Layout - French & English efficiency -$/;"	S	section:The journey that leads to an Urchin keyboard
 Navigation	README.md	/^  ### Navigation$/;"	S	section:Keymap Layers & In depth Logic
 Num Layer	README.md	/^  ### Num Layer$/;"	S	section:Keymap Layers & In depth Logic
+OMINUS	config/keys_de.h	/^#define OMINUS /;"	d
+PENTER	config/keys_de.h	/^#define PENTER /;"	d
+PMINUS	config/keys_de.h	/^#define PMINUS /;"	d
+PSPACE	config/keys_de.h	/^#define PSPACE /;"	d
 Room for Improvements	README.md	/^  ### Room for Improvements$/;"	S	section:Known issues & Room for Improvements
 Settings Layer	README.md	/^  ### Settings Layer$/;"	S	section:Keymap Layers & In depth Logic
 Short Cuts Layer	README.md	/^  ### Short Cuts Layer$/;"	S	section:Keymap Layers & In depth Logic
