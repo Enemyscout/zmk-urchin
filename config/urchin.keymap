@@ -77,12 +77,6 @@
             layers = <DEFAULT>;
             bindings = <&caps_word>;
         };
-        combo_panic {
-            timeout-ms = <50>;
-            key-positions = <10 11 12 13>;
-            // layers = <DEFAULT>;
-            bindings = <&to DEFAULT>;
-        };
         combo_lctl {
             timeout-ms = <50>;
             key-positions = <12 13>;
